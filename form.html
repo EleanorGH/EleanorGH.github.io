@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form</title>
+	
+	<style>
+		
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+		body {
+			font-family: "Open Sans";
+		}
+
+		h1, h3 {
+			margin-left: 5px;
+		}
+
+		div {
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			padding: 20px;
+			width: 400px;
+		}
+
+		input[type="text"] {
+			width: 100%;
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 14px 20px;
+			margin: 8px 0;
+			background-color: white;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			color: black;
+		}
+
+		input[type="submit"] {
+			width: 100%;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			color: white;
+			background-color: #32a852;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #2c9448;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<h1>Welcome to my AoS 2 Week 2 Webpage!</h1>
+
+	<h3>For a customised experience, please enter the following:</h3>
+	
+	<div>
+		<form action="result.php" method="get">
+			<b>Name:</b> <br/> <input type="text" name="name" placeholder="Your name...">
+			<br/>
+			<b>Age:</b> <br/> <input type="text" name="age" placeholder="Your age...">
+			<br/>
+			<b>Favourite Colour:</b> <br/> <input type="color" name="color">
+			<br/>
+			<b>Favourite Dog Breed</b> <br/> 
+			<select name="dog">
+				<option value="dalmation">Dalmation</option>
+				<option value="golden">Golden Retriever</option>
+				<option value="pug">Pug</option>
+				<option value="husky">Siberian Husky</option>
+				<option value="bernese">Bernese Mountain Dog</option>
+				<option value="poodle">Poodle</option>
+				<option value="bulldog">Bulldog</option>
+				<option value="yorkshire">Yorkshire Terrier</option>
+				<option value="corgi">Welsh Corgi</option>
+			</select> <br/>
+			<input type="submit">
+		</form>
+	</div>
+
+</body>
+</html>
